@@ -1,4 +1,4 @@
-import Leaflet from 'leaflet'
+//import Leaflet from 'leaflet'
 import { greenbeltStyle, aqmaStyle, smokecontrolareaStyle } from './Styles'
 import { greenbeltPopup, aqmaPopup, smokecontrolareaPopup} from './Popups' 
 
