@@ -26,7 +26,7 @@ const Configuration = {
                 onEachFeature: smokecontrolareaPopup
             },
             displayOverlay: true,
-            visibleByDefault: true
+            visibleByDefault: false
         },
         
         {
@@ -38,7 +38,7 @@ const Configuration = {
                 onEachFeature: greenbeltPopup
             },
             displayOverlay: true,
-            visibleByDefault: true
+            visibleByDefault: false
         },
 
         {
@@ -50,7 +50,7 @@ const Configuration = {
                 onEachFeature: aqmaPopup
             },
             displayOverlay: true,
-            visibleByDefault: true
+            visibleByDefault: false
         },
 
         {
