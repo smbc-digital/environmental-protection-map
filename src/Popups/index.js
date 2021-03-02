@@ -1,32 +1,43 @@
 const greenbeltPopup = (feature, layer) => {
   
-  const content = `<div class="item"><i class="fa fa-envira" aria-hidden="true"></i><p class="title">Green Belt</p>
-  
-  </div>`
- 
+  const content = `<div class="smbc-map__item">
+  <div class="smbc-map__item__header__block">
+    <i class="fa fa-envira smbc-map__item__header__block__icon" aria-hidden="true"></i>
+    <span class="smbc-map__item__header__block__title">Green Belt</span>
+  </div>
+</div>`
+
   layer.bindPopup(content)
  }
 
  const aqmaPopup = (feature, layer) => {
   
-  const content = `<div class="item"><i class="fa fa-list" aria-hidden="true"></i><p class="title">Air Quality Management Area</p>
-  <p></p>
-  <p class="info">Notes: ${feature.properties.notes}</p>
+  const content = `<div class="smbc-map__item">
+  <div class="smbc-map__item__header__block">
+    <i class="fa fa-list smbc-map__item__header__block__icon" aria-hidden="true"></i>
+    <span class="smbc-map__item__header__block__title">Air Quality Management Area</span>
+  </div>
+  <div class="smbc-map__item__body">
+    <p>Notes: ${feature.properties.notes}</p>
+  </div>
+</div>`
 
-  </div>`
- 
   layer.bindPopup(content)
  }
 
  const smokecontrolareaPopup = (feature, layer) => {
   
-  const content = `<div class="item"><i class="fa fa-tag" aria-hidden="true"></i><p class="title">Smoke Control Area</p>
-  <p></p>
-  <p class="info">Restrictions: ${feature.properties.restrictions}</p>
-  <p class="info">Source: ${feature.properties.source}</p>
-  <p class="info">Derived: ${feature.properties.derived}</p>
-
-  </div>`
+  const content = `<div class="smbc-map__item">
+  <div class="smbc-map__item__header__block">
+    <i class="fa fa-tag smbc-map__item__header__block__icon" aria-hidden="true"></i>
+    <span class="smbc-map__item__header__block__title">Smoke Control Area</span>
+  </div>
+  <div class="smbc-map__item__body">
+    <p>Restrictions: ${feature.properties.restrictions}</p>
+    <p>Source: ${feature.properties.source}</p>
+    <p>Derived: ${feature.properties.derived}</p>
+  </div>
+</div>`
  
   layer.bindPopup(content)
  }
